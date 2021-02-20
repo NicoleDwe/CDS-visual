@@ -37,5 +37,5 @@ Run the script, by specifying the required parameters:
 
 Using these parameters and the flowers data the command could be: 
 
-`python3 -p data/flowers/ -t image_0001.jpg -o output/`
+`python3 src/assignment2_nd.py -p data/flowers/ -t image_0001.jpg -o output/`
 
