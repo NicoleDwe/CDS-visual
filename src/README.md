@@ -7,19 +7,26 @@ For this assignment the following dataset was used:  https://www.robots.ox.ac.uk
 
 To run the script, follow the following steps: 
 
-1. Clone the repository (saved as cds-visual-nicole)
-`git clone https://github.com/nicole-dwenger/cds-visual.git cds-visual-nicole´
+1. Clone the repository (saved as cds-visual-nicole:
 
-2. Move into the directory cds-visual-nicole
+`git clone https://github.com/nicole-dwenger/cds-visual.git cds-visual-nicole`
+
+2. Move into the directory cds-visual-nicole:
+
 `cd cds-visual-nicole`
 
-3. If you also want to use the flowers data, you can unzip the file which is in the data directory. The result should be a directory whithin the data directory called flowers. Then, move back to the parent directory.
+3. If you also want to use the flowers data, you can unzip the file which is in the data directory. The result should be a directory whithin the data directory called flowers. Then, move back to the parent directory:
+
 `cd data`
+
 `unzip flowers.zip`
+
 `cd ..`
 
 4. Create the venv and activate it: 
+
 `bash create_vision_venv.sh`
+
 `source cv101/bin/activate`
 
 5. Run the script, by specifying the required parameters:
@@ -29,5 +36,6 @@ To run the script, follow the following steps:
 - -o: directory for output csv file
 
 Using these parameters and the flowers data the command could be: 
+
 `python3 -p data/flowers/ -t image_0001.jpg -o output/`
 
