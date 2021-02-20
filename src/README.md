@@ -7,7 +7,7 @@ For this assignment the following dataset was used:  https://www.robots.ox.ac.uk
 
 To run the script, follow the following steps: 
 
-Clone the repository (saved as cds-visual-nicole:
+Clone the repository (saved as cds-visual-nicole):
 
 `git clone https://github.com/nicole-dwenger/cds-visual.git cds-visual-nicole`
 
