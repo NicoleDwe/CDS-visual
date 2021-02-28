@@ -11,6 +11,7 @@ pip install ipython
 pip install jupyter
 pip install matplotlib
 pip install opencv-python
+pip install pandas
 
 python -m ipykernel install --user --name=$VENVNAME
 

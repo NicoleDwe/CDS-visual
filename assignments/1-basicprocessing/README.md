@@ -22,7 +22,7 @@ __General instructions:__
 - The filenames of the split images should clearly relate to the original image.
 
 __Purpose:__
-This assignment is designed to test that you have a understanding of:<br>
+This assignment is designed to test that you have a understanding of:
 1. how to structure, document, and share a Python script;
 2. how to effectively make use of basic functions in cv2;
 3. how to read, write, and process images files.
@@ -31,6 +31,7 @@ This assignment is designed to test that you have a understanding of:<br>
 ## Running the Script
 
 __Cloning the Repository__
+
 To run the script `basic_image_processing.py`, it is best to clone this repository to your own machine/server. To do this, you can run the following commands in your terminal:
 
 ```bash
@@ -42,6 +43,7 @@ cd cds-visual-nd
 ```
 
 __Dependencies__
+
 To run the script, it is best to create the virtual environment cv101 using the bash script `create_venv.sh` which will install the necessary files spectified in the `requirements.txt` file (both files are stored at the root of the directory). To install and activate the environment, you can run the following commands: 
 
 ```bash
@@ -53,19 +55,24 @@ source cv101/bin/activate
 ```
 
 __Data__
-For this assignment I used a dataset of emojis, downloaded from [Kaggle](https://www.kaggle.com/victorhz/emoticon). The data is stored in the `../data/emoji/` directory. 
+
+For this assignment I used a dataset of emojis, downloaded from [Kaggle](https://www.kaggle.com/victorhz/emoticon). The data is stored in the `cds-visual-nd/data/emoji/` directory.
 
 __Running the script__
+
 If you are still at the `cds-visual-nd` directory, I'd recommend moving into `assignments/1-basicprocessing/` directory to run the script. To run the script, you need to specify the path two parameters:
 - -p: path to the directory containing the input images
-- -o: path to the directory where output files should be saved
+- -o: path to the directory where output files should be saved (if the directory does not exist, it will be created)
 
-For instance you could run: 
+For instance, run: 
 ```bash
 # move into correct directory
 cd assignments/1-basicprocessing/
 
 # run the script
-python3 basic_image_processing.py -p ../..x/data/emojis/ 
+python3 basic_image_processing.py -p ../../data/emojis/ -o output/
 ```
 
+__Output__
+
+The output will saved in the `output/` directory, and will contain the split images, which are named with the name of the original image and the image part, e.g. happyemoji_topleft.jpg, and saved in `output/split_images/`, and a .csv file containing the height and width information of each of the split images. 

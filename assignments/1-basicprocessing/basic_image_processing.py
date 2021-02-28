@@ -8,7 +8,7 @@ Parameters:
 Usage:
     basic_image_processinng.py --path <path-to-image-dir>
 Example:
-    $ python3 basic_image_processing.py --path data/emojis --output_path output/
+    $ python3 basic_image_processing.py --path ../../data/emojis --output_path output/
 """
 
 # import dependencies
@@ -25,10 +25,15 @@ sys.path.append(os.path.join(".."))
 
 # function to read image and get name, height, width, channels
 def get_image_info(path_to_image):
+    # get string of image part to use with cv2
     str_image_path = str(path_to_image)
+    # read image
     image = cv2.imread(str_image_path)
+    # get image name
     image_name = os.path.split(path_to_image)[1]
+    # get height, width and channel info from image
     height, width, n_channels = image.shape[0:3]
+    # return important parameters
     return image, image_name, height, width, n_channels
 
 # define main function 
@@ -47,7 +52,7 @@ def main():
     if not os.path.exists(output_directory):
         os.mkdir(output_directory)
     
-    # create directory for the split images
+    # create output directory for the split images
     split_images_output_directory = os.path.join(output_directory, "split_images")
     if not os.path.exists(split_images_output_directory):
         os.mkdir(split_images_output_directory)
@@ -99,4 +104,4 @@ if __name__ == "__main__":
 
                                    
                                    
-                                   
+                    
