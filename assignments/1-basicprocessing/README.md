@@ -1,5 +1,8 @@
 # Assignment 1: Basic Image Processing
 
+- [Task](#Task)
+- [Running the Script](#Running-the-Script)
+
 ## Task
 
 __Basic scripting with Python__
@@ -61,8 +64,8 @@ For this assignment I used a dataset of emojis, downloaded from [Kaggle](https:/
 __Running the script__
 
 If you are still at the `cds-visual-nd` directory, I'd recommend moving into `assignments/1-basicprocessing/` directory to run the script. To run the script, you need to specify the path two parameters:
-- -p: path to the directory containing the input images
-- -o: path to the directory where output files should be saved (if the directory does not exist, it will be created)
+- `-p`: path to the directory containing the input images
+- `-o`: path to the directory where output files should be saved (if the directory does not exist, it will be created)
 
 For instance, run: 
 ```bash

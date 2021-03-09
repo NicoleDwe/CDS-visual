@@ -1,5 +1,8 @@
 # Assignment 2: Simple Image Search
 
+- [Task](#Task)
+- [Running the Script](#Running-the-Script)
+
 ## Task
 
 __Creating a simple image search script__
@@ -72,9 +75,9 @@ cd ..
 __Running the script__
 
 If you are at the `cds-visual-nd` directory, I'd recommend moving into `assignments/2-imagesearch/` directory. To run the script, you need to specify the path two parameters:
-- -p: path to directory of images 
-- -t: name of target image
-- -o: directory for output csv file (if the directory does not exist, it will be created)
+- `-p`: path to directory of images 
+- `-t`: name of target image
+- `-o`: directory for output csv file (if the directory does not exist, it will be created)
 
 For instance, run: 
 ```bash
