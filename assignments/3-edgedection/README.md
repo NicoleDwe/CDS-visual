@@ -8,9 +8,7 @@
 
 The purpose of this assignment is to use computer vision to extract specific features from images. In particular, we're going to see if we can find text. We are not interested in finding whole words right now; we'll look at how to find whole words in a coming class. For now, we only want to find language-like objects, such as letters and punctuation.
 
-Download and save the image at the link below:
-
-https://upload.wikimedia.org/wikipedia/commons/f/f4/%22We_Hold_These_Truths%22_at_Jefferson_Memorial_IMG_4729.JPG
+Download and save the image at this [link](https://upload.wikimedia.org/wikipedia/commons/f/f4/%22We_Hold_These_Truths%22_at_Jefferson_Memorial_IMG_4729.JPG).
 
 Using the skills you have learned up to now, do the following tasks:
 
@@ -48,7 +46,7 @@ This assignment is designed to test that you have a understanding of:
 
 __Cloning the Repository__
 
-To run the script `edge_detection.py`, it is best to clone this repository to your own machine/server. To do this, you can run the following commands in your terminal:
+To run the script `edge_detection.py`, it is best to clone this repository to your own machine/server by running the following commands:
 
 ```bash
 # clone repository into cds-visual-nd
@@ -60,7 +58,7 @@ cd cds-visual-nd
 
 __Dependencies__
 
-To run the script, it is best to create the virtual environment cv101 using the bash script `create_venv.sh` which will install the necessary files spectified in the `requirements.txt` file (both files are stored at the root of the directory). To install and activate the environment, you can run the following commands: 
+To run the script, it is best to create the virtual environment `cv101` using the bash script `create_venv.sh`. This will install the necessary dependencies spectified in the `requirements.txt` file (both files are stored at the root of the directory). To install and activate the environment, you can run the following commands: 
 
 ```bash
 # create cv101
@@ -72,17 +70,13 @@ source cv101/bin/activate
 
 __Data__
 
-For this assignment I used the [image](https://upload.wikimedia.org/wikipedia/commons/f/f4/%22We_Hold_These_Truths%22_at_Jefferson_Memorial_IMG_4729.JPG) which is liked to above and stored in the `data/` directory as weholdtruths.jpeg.
-
-Of course you can also use another image (but I can't promise that the output will be good)
+For this assignment I used the image linked to above, which is stored in the `data/` directory as `weholdtruths.jpeg`. (You can also try running the script with another image, but I can't promise that the output will be good).
 
 __Running the script__
 
-If you are at the `cds-visual-nd` directory, I'd recommend moving into `assignments/3-edgedetection/` directory. To run the script, you need to specify the path two parameters:
+If you are at the `cds-visual-nd` directory, I'd recommend moving into `assignments/3-edgedetection/` directory. To run the script, you need to provide the following input parameters:
 - `-i`: path to the image
-- `-r`: points of region of interest, to define area of text, which is used to crop the image
-    - This input should be 4 points separated with a space, where the first two numbers represent the x and y values of the top-left-corner of the ROI and the last two numbers the x and y values of the bottom-right-corner of the ROI
-    - In the code below, I defined these numbers for the wecountthetruths.jpeg image, if you are providing a different image, you might want to change these numbers.
+- `-r`: points of region of interest (ROI), which should be the text-area in the image. The format of this input are 4 integers separated with a space (`x1 y1 x2 y2`). `x1` and `y1` refer to the top-left corner of the ROI, while `x2` and `y2` refer to the bottom-right corner of the ROI. In the code below, I provided the number of the `wecountthetruths.jpeg`. If you are providing a different image, you might want to change these numbers.
 - `-o`: directory for output files (if the directory does not exist, it will be created)
 
 For instance, run: 
