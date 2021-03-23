@@ -17,7 +17,7 @@ __Tips:__
 - I suggest using scikit-learn for the Logistic Regression Classifier
 - In class, we only looked at a small sample of MNIST data. I suggest using fetch_openml() to get the full dataset, like we did in session 6
 - You can use the NeuralNetwork() class that I introduced you to during the code along session
-- I recommend saving your .py scripts in a folder called src﻿; and have your NeuralNetwork class in a folder called utils, like we have on worker02
+- I recommend saving your .py scripts in a folder called src; and have your NeuralNetwork class in a folder called utils, like we have on worker02
 - You may need to do some data manipulation to get the MNIST data into a usable format for your models
 - If you have trouble doing this on your own machine, use worker02!
 
@@ -49,7 +49,7 @@ This assignment is designed to test that you have a understanding of:
 
 __Cloning the Repository__
 
-To run the script `edge_detection.py`, it is best to clone this repository to your own machine/server by running the following commands:
+To run the scripts `lr-mnist.py` or `nn-mnist.py`, it is best to clone this repository to your own machine/server by running the following commands:
 
 ```bash
 # clone repository into cds-visual-nd
