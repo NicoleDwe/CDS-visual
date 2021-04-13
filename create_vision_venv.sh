@@ -9,13 +9,10 @@ pip install --upgrade pip
 # problems when installing from requirements.txt
 pip install ipython
 pip install jupyter
-pip install matplotlib
-pip install opencv-python
-pip install pandas
 
 python -m ipykernel install --user --name=$VENVNAME
 
-test -f requirements.txt && pip install requirements.txt
+test -f requirements.txt && pip install -r requirements.txt
 
 deactivate
 echo "build $VENVNAME"
